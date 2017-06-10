@@ -253,7 +253,7 @@ let (.>>) p1 p2 =
     |> mapP (fun (a, _) -> a)
 
 let (>>.) p1 p2 =
-    p1 .>> p2
+    p1 .>>. p2
     |> mapP (fun (_, b) -> b)
 
 let between p1 p2 p3 =
